@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hpy Diwali</title>
+    <style>
+      :root {
+        --poppy-yellow: #ffe600;
+      }
+      
+      body {
+        margin: 0;
+        padding: 20px;
+        min-height: 100vh;
+        background-color: #0b0b1e;
+        
+        /* Multiplied the stars by layering more dense patterns */
+        background-image: 
+          radial-gradient(white, rgba(255,255,255,.3) 1.5px, transparent 8px),
+          radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 15px),
+          radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 10px),
+          radial-gradient(white, rgba(255,255,255,.25) 1.5px, transparent 12px),
+          radial-gradient(rgba(255,230,0,0.4), rgba(255,255,255,.1) 1px, transparent 8px), /* Added subtle warm stars */
+          radial-gradient(white, rgba(255,255,255,.2) 1px, transparent 6px);
+        
+        /* Made sizes smaller so the pattern repeats much more frequently */
+        background-size: 250px 250px, 180px 180px, 150px 150px, 200px 200px, 300px 300px, 120px 120px;
+        background-position: 0 0, 30px 40px, 70px 10px, 110px 80px, 50px 150px, 90px 30px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 20px;
+        color: var(--poppy-yellow);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 0 0 10px rgba(255, 230, 0, 0.6), 0 0 20px rgba(255, 230, 0, 0.4);
+      }
+
+      .diwali-image {
+        max-width: 90%;
+        width: 500px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+        border: 3px solid var(--poppy-yellow);
+        background-color: #161633; /* Dark backup if the image takes a moment to load */
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>Happy Diwali</h1>
+    
+    <!-- IMAGE PLACEHOLDER -->
+    <!-- Replace "diwali-photo.jpg" with your actual image file name -->
+    <img src="Diwali2" alt="Happy Diwali Family Celebration" class="diwali-image">
+
+  </body>
+</html>
